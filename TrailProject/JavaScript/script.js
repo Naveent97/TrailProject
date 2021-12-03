@@ -1,4 +1,9 @@
 function changeTexts() {
-var label = getElementById('mainHeading');
-label.innerHTML = "Hi";
+var label1 = document.getElementById('mainHeading');
+label1.innerHTML = "Hi";
+}
+
+function changeBack(){
+  var label1 = document.getElementById('mainHeading');
+  label1.innerHTML = "Hello";
 }
