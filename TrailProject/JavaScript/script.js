@@ -18,3 +18,22 @@ function addLabel() {
   newDef1.appendChild(newLabel1);
   exRow1.appendChild(newDef1);
 }
+
+function insertText() {
+  var text1 = document.getElementById('newTextInput');
+
+  var newRow1 = document.createElement('tr');
+  var newTd1 = document.createElement('td');
+
+  var newLabel2 = document.createElement('label');
+  newLabel2.innerHTML = text1;
+  var exRow2 = document.getElementById('secondRow');
+
+  newRow1.appendChild(newTd1);
+  exRow2.appendChild(newRow1);
+
+
+
+
+
+}
