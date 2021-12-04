@@ -20,20 +20,19 @@ function addLabel() {
 }
 
 function insertText() {
-  var text1 = document.getElementById('newTextInput');
+  var text1 = document.getElementById('newTextInput').value;
 
   var newRow1 = document.createElement('tr');
   var newTd1 = document.createElement('td');
 
   var newLabel2 = document.createElement('label');
-  newLabel2.innerHTML = text1;
-  var exRow2 = document.getElementById('secondRow');
+  //newLabel2.setAttribute("value",text1);
+    newLabel2.innerHTML = text1;
+  var exRow2 = document.getElementById('fourthRow');
 
+  newTd1.appendChild(newLabel2);
   newRow1.appendChild(newTd1);
-  exRow2.appendChild(newRow1);
-
-
-
+  exRow2.prepend(newRow1);
 
 
 }
